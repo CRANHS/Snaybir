@@ -8529,8 +8529,8 @@ return LuaTele.sendText(msg_chat_id,msg_id,"⌔︙تم مسح قائمه ردو�
 end
 
 if text == "التاريخ" then
-local ramsesj20 =  "\n التاريخ : "..os.date("%Y/%m/%d")
-send(msg.chat_id_, msg.id_,ramsesj20)
+return return LuaTele.sendText.sendText =  "\n التاريخ : "..os.date("%Y/%m/%d")
+send(msg.chat_id_, msg.id_,LuaTele)
 end
 if text == ("ردود المدير") then
 if not msg.Managers then
