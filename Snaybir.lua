@@ -2660,6 +2660,10 @@ end
 if chat_type(msg.chat_id) == "GroupBot" and Redis:sismember(TheSnaybir.."Snaybir:ChekBotAdd",msg_chat_id) then
 Redis:incr(TheSnaybir..'Snaybir:Num:Message:User'..msg.chat_id..':'..msg.sender.user_id) 
 if text == "ايدي" and msg.reply_to_message_id == 0 then
+if ChannelJoin(msg) == false then
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = 'اضغط للاشتراك', url = 't.me/'..Redis:get(TheSnaybir..'Snaybir:Channel:Join')}, },}}
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n⌔︙عليك الاشتراك في قناة البوت لاستخذام الاوامر*',"md",false, false, false, false, reply_markup)
+end 
 if not Redis:get(TheSnaybir.."Snaybir:Status:Id"..msg_chat_id) then
 return false
 end
@@ -4496,20 +4500,7 @@ local MSGID = string.gsub(MsgId,'.0','')
 local httpsCurl = "https://devstorm.ml/YoutubeApi/tahaj200.php?token="..Token.."&msg="..MSGID.."&Text="..URL.escape(Ttext).."&chat_id="..msg_chat_id.."&user="..msg.sender.user_id
 io.popen('curl -s "'..httpsCurl..'"')
 end
-if text == "غنيلي" then
-local taha = io.popen('curl -s "https://Black-source.tk/BlackTeAM/audios.php"'):read('*a')
-audios = json:decode(taha)
-if audios.Info == true then
-local Text ='⌔︙تم اختيار المقطع الصوتي لك'
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '- Snaybir TeAM .',url="t.me/SNAYBIR"}},
-}
-local MsgId = msg.id/2097152/0.5
-local MSGID = string.gsub(MsgId,'.0','')
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MSGID.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-end
+
 
 if text and text:match("^تعطيل (.*)$") and msg.reply_to_message_id == 0 then
 local TextMsg = text:match("^تعطيل (.*)$")
@@ -5039,7 +5030,7 @@ end
 if StatusCanOrNotCan(msg_chat_id,UserId_Info.id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︙عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId_Info.id).." } *","md",true)  
 end
-LuaTele.setChatMemberStatus(msg.chat_id,UserId_Info.id,'restricted',{1,1,1,1,1,1,1,1,1})
+LuaTele.setChatMemberStatus(msg.chat_id,UserId_Info.id,'banned',0)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId_Info.id,"⌔︙تم طرده من المجموعه ").Reply,"md",true)  
 end
 if text == ('حظر عام') and msg.reply_to_message_id ~= 0 then
@@ -5296,7 +5287,7 @@ end
 if StatusCanOrNotCan(msg_chat_id,Message_Reply.sender.user_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︙عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,Message_Reply.sender.user_id).." } *","md",true)  
 end
-LuaTele.setChatMemberStatus(msg.chat_id,Message_Reply.sender.user_id,'restricted',{1,1,1,1,1,1,1,1,1})
+LuaTele.setChatMemberStatus(msg.chat_id,Message_Reply.sender.user_id,'banned',0)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(Message_Reply.sender.user_id,"⌔︙تم طرده من المجموعه ").Reply,"md",true)  
 end
 
@@ -5530,7 +5521,7 @@ end
 if StatusCanOrNotCan(msg_chat_id,UserId) then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*⌔︙عذرآ لا تستطيع استخدام الامر على { "..Controller(msg_chat_id,UserId).." } *","md",true)  
 end
-LuaTele.setChatMemberStatus(msg.chat_id,UserId,'restricted',{1,1,1,1,1,1,1,1,1})
+LuaTele.setChatMemberStatus(msg.chat_id,UserId,'banned',0)
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId,"⌔︙تم طرده من المجموعه ").Reply,"md",true)  
 end
 
@@ -5558,8 +5549,8 @@ end
 if KickMe == true then
 return LuaTele.sendText(msg_chat_id,msg_id,"*⌔︙عذرا لا استطيع طرد ادمنيه ومنشئين المجموعه*","md",true)    
 end
-LuaTele.setChatMemberStatus(msg.chat_id,msg.sender.user_id,'restricted',{1,1,1,1,1,1,1,1,1})
-return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId_Info.id,"⌔︙تم طردك من المجموعه بنائآ على طلبك").Reply,"md",true)  
+LuaTele.setChatMemberStatus(msg.chat_id,msg.sender.user_id,'banned',0)
+return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"⌔︙تم طردك من المجموعه بنائآ على طلبك").Reply,"md",true)  
 end
 
 if text == 'ادمنيه الكروب' then
@@ -5992,6 +5983,36 @@ end
 LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(msg.sender.user_id,"⌔︙تم فـتح جميع الاوامر").unLock,"md",true)  
 return false
 end 
+if text == "@all" or text == "تاك عام" or text == "all" then
+if not msg.Addictive then
+return LuaTele.sendText(msg_chat_id,msg_id,'\n*⌔︙هذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
+end
+local Info_Members = LuaTele.searchChatMembers(msg_chat_id, "*", 200)
+x = 0
+tags = 0
+local list = Info_Members.members
+for k, v in pairs(list) do
+local UserInfo = LuaTele.getUser(v.member_id.user_id)
+if x == 5 or x == tags or k == 0 then
+tags = x + 5
+listall = ""
+end
+x = x + 1
+if UserInfo.first_name ~= '' then
+listall = listall.." ["..UserInfo.first_name.."](tg://user?id="..UserInfo.id.."),"
+end
+if x == 5 or x == tags or k == 0 then
+LuaTele.sendText(msg_chat_id,msg_id,listall,"md",true)  
+end
+end
+end
+if text == "غنيلي" or text == "غني" then 
+Abs = math.random(2,140); 
+local Text ='*✯︙تم اختيار الاغنيه لك*'
+local MsgId = msg.id/2097152/0.5
+local MSGID = string.gsub(MsgId,'.0','')
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+end
 --------------------------------------------------------------------------------------------------------------
 if text == "قفل التكرار" then 
 if not msg.Addictive then
@@ -8526,11 +8547,6 @@ Redis:del(TheSnaybir.."Snaybir:Add:Rd:Manager:Audio"..v..msg_chat_id)
 Redis:del(TheSnaybir.."Snaybir:List:Manager"..msg_chat_id)
 end
 return LuaTele.sendText(msg_chat_id,msg_id,"⌔︙تم مسح قائمه ردود المدير","md",true)  
-end
-
-if text == "التاريخ" then
-return return LuaTele.sendText.sendText =  "\n التاريخ : "..os.date("%Y/%m/%d")
-send(msg.chat_id_, msg.id_,LuaTele)
 end
 if text == ("ردود المدير") then
 if not msg.Managers then
