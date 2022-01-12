@@ -150,9 +150,9 @@ Managers = Redis:sismember(TheSnaybir.."Snaybir:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnaybir.."Snaybir:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnaybir.."Snaybir:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 474380639 then
+if UserId == 373906612 then
 Status = 'مبرمج السورس'
-elseif UserId == 474380639 then
+elseif UserId == 1349843982 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -765,9 +765,9 @@ Managers = Redis:sismember(TheSnaybir.."Snaybir:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnaybir.."Snaybir:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnaybir.."Snaybir:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 474380639 then
+if UserId == 373906612 then
 Status = true
-elseif UserId == 474380639 then
+elseif UserId == 1349843982 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -893,10 +893,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 474380639 then
+if tonumber(msg.sender.user_id) == 373906612 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 474380639 then
+elseif tonumber(msg.sender.user_id) == 1349843982 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -8997,13 +8997,13 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'قناة السورس', url = 'https://t.me/iih5i'}, 
+{text = 'قناة السورس', url = 'https://t.me/SNAYBIR'}, 
 },
 {
-{text = 'الشروحات', url = 'https://t.me/iih5i'}, 
+{text = 'الشروحات', url = 'https://t.me/EPX_SNAYBIR'}, 
 },
 {
-{text = 'مطور السورس', url = 't.me/m98oh8'}, 
+{text = 'مطور السورس', url = 't.me/OMMO10'}, 
 },
 }
 }
@@ -9023,19 +9023,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𖠇1𖠇', data = msg.sender.user_id..'/help1'}, {text = '𖠇2𖠇', data = msg.sender.user_id..'/help2'}, 
+{text = '{ 𝟏 }', data = msg.sender.user_id..'/help1'}, {text = '{ 𝟐 }', data = msg.sender.user_id..'/help2'}, 
 },
 {
-{text = '𖠇3𖠇', data = msg.sender.user_id..'/help3'}, {text = '𖠇4𖠇', data = msg.sender.user_id..'/help4'}, 
+{text = '{ 𝟑 }', data = msg.sender.user_id..'/help3'}, {text = '{ 𝟒 }', data = msg.sender.user_id..'/help4'}, 
 },
 {
-{text = '𖠇5𖠇', data = msg.sender.user_id..'/help5'}, {text = '{ الالعاب }', data = msg.sender.user_id..'/help6'}, 
+{text = '{ 𝟓 }', data = msg.sender.user_id..'/help5'}, {text = '{ الالعاب }', data = msg.sender.user_id..'/help6'}, 
 },
 {
 {text = '{ اوامر القفل / الفتح }', data = msg.sender.user_id..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9063,7 +9063,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9083,7 +9083,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9103,7 +9103,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9123,7 +9123,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9143,7 +9143,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9163,7 +9163,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -9204,10 +9204,10 @@ end
 Redis:del(TheSnaybir.."Snaybir:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"⌔︙تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(TheSnaybir.."Snaybir:Name:Bot") or "كرانش") then
-local NamesBot = (Redis:get(TheSnaybir.."Snaybir:Name:Bot") or "كرانش")
+if text == (Redis:get(TheSnaybir.."Snaybir:Name:Bot") or "سنايبر") then
+local NamesBot = (Redis:get(TheSnaybir.."Snaybir:Name:Bot") or "سنايبر")
 local NameBots = {
-"محمد "..NamesBot.. " شتريد؟",
+"عمر "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
 "لتــلح دا احجي ويه بنات سنايبر بعدين اجاوبك",
@@ -9217,7 +9217,7 @@ local NameBots = {
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(TheSnaybir.."Snaybir:Name:Bot") or "كرانش")
+local NamesBot = (Redis:get(TheSnaybir.."Snaybir:Name:Bot") or "سنايبر")
 local BotName = {
 "باوع لك خليني احبك وصيحلي باسمي "..NamesBot,
 "لتخليني ارجع لحركاتي لقديمه وردا ترا اسمي "..NamesBot.. "",
@@ -10015,7 +10015,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -10028,7 +10028,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -10876,19 +10876,20 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𖠇1𖠇', data = IdUser..'/help1'}, {text = '𖠇2𖠇', data = IdUser..'/help2'}, 
+{text = '{ 𝟏 }', data = IdUser..'/help1'}, {text = '{ 𝟐 }', data = IdUser..'/help2'}, 
 },
 {
-{text = '𖠇3𖠇', data = IdUser..'/help3'}, {text = '𖠇4𖠇', data = IdUser..'/help4'}, 
+{text = '{ 𝟑 }', data = IdUser..'/help3'}, {text = '{ 𝟒 }', data = IdUser..'/help4'}, 
 },
 {
-{text = '𖠇5𖠇', data = IdUser..'/help5'}, {text = '{ الالعاب }', data = IdUser..'/help6'}, 
+{text = '{ 𝟓 }', data = IdUser..'/help5'}, {text = '{ الالعاب }', data = IdUser..'/help6'}, 
 },
 {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'},
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+},
 }
 }
 local TextHelp = [[*
@@ -10933,19 +10934,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𖠇1𖠇', data = IdUser..'/help1'}, {text = '𖠇2𖠇', data = IdUser..'/help2'}, 
+{text = '{ 𝟏 }', data = IdUser..'/help1'}, {text = '{ 𝟐 }', data = IdUser..'/help2'}, 
 },
 {
-{text = '𖠇3𖠇', data = IdUser..'/help3'}, {text = '𖠇4𖠇', data = IdUser..'/help4'}, 
+{text = '{ 𝟑 }', data = IdUser..'/help3'}, {text = '{ 𝟒 }', data = IdUser..'/help4'}, 
 },
 {
-{text = '𖠇5𖠇', data = IdUser..'/help5'}, {text = '{ الالعاب }', data = IdUser..'/help6'}, 
+{text = '{ 𝟓 }', data = IdUser..'/help5'}, {text = '{ الالعاب }', data = IdUser..'/help6'}, 
 },
 {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -10992,19 +10993,19 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𖠇1𖠇', data = IdUser..'/help1'}, {text = '𖠇2𖠇', data = IdUser..'/help2'}, 
+{text = '{ 𝟏 }', data = IdUser..'/help1'}, {text = '{ 𝟐 }', data = IdUser..'/help2'}, 
 },
 {
-{text = '𖠇3𖠇', data = IdUser..'/help3'}, {text = '𖠇4𖠇', data = IdUser..'/help4'}, 
+{text = '{ 𝟑 }', data = IdUser..'/help3'}, {text = '{ 𝟒 }', data = IdUser..'/help4'}, 
 },
 {
-{text = '𖠇5𖠇', data = IdUser..'/help5'}, {text = '{ الالعاب }', data = IdUser..'/help6'}, 
+{text = '{ 𝟓 }', data = IdUser..'/help5'}, {text = '{ الالعاب }', data = IdUser..'/help6'}, 
 },
 {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -11057,7 +11058,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -11097,7 +11098,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -11152,7 +11153,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
@@ -11193,7 +11194,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i'}, 
+{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
 },
 }
 }
