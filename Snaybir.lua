@@ -10888,7 +10888,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/iih5i
+{text = '- قناة السورس', url = 't.me/iih5i'},
 }
 }
 local TextHelp = [[*
