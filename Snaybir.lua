@@ -8997,13 +8997,13 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = 'قناة السورس', url = 'https://t.me/iih5i'}, 
+{text = 'قناة السورس', url = 'https://t.me/SNAYBIR'}, 
 },
 {
-{text = 'الشروحات', url = 'https://t.me/iih5i'}, 
+{text = 'الشروحات', url = 'https://t.me/EPX_SNAYBIR'}, 
 },
 {
-{text = 'مطور السورس', url = 't.me/m98oh8'}, 
+{text = 'مطور السورس', url = 't.me/OMMO10'}, 
 },
 }
 }
