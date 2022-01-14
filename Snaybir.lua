@@ -153,7 +153,7 @@ StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 373906612 then
 Status = 'مبرمج السورس'
 elseif UserId == 474380639 then
-Status = 'مطور السورس'
+Status = 'مبرمج السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == TheSnaybir then
@@ -897,7 +897,7 @@ if tonumber(msg.sender.user_id) == 373906612 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif tonumber(msg.sender.user_id) == 474380639 then
-msg.Name_Controller = 'مطور السورس '
+msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
 msg.The_Controller = 1
@@ -9003,7 +9003,7 @@ data = {
 {text = 'الشروحات', url = 'https://t.me/iih5i'}, 
 },
 {
-{text = 'مطور السورس', url = 't.me/m98oh8'}, 
+{text = 'مبرمج السورس', url = 't.me/m98oh8'}, 
 },
 }
 }
