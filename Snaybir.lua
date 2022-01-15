@@ -708,12 +708,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه المسح *',
-unLock   = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه الكتم *',
-lockKid  = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه التقييد *',
-lockKick = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه الطرد *',
-Reply    = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n⌔︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[- ROULETE 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه المسح *',
+unLock   = '[- ROULETE 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[- ROULETE 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه الكتم *',
+lockKid  = '[- ROULETE 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه التقييد *',
+lockKick = '[- ROULETE 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n⌔︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n⌔︙خاصيه الطرد *',
+Reply    = '[- ROULETE 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n⌔︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
