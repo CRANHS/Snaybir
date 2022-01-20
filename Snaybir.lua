@@ -114,7 +114,7 @@ return Chat_Type
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1349843982}  
+local ListSudos ={Sudo_Id,474380639}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -125,9 +125,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(TheSnaybir.."Snaybir:DevelopersQ:Groups",UserId) 
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = true
-elseif UserId == 1986614741 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -150,9 +150,9 @@ Managers = Redis:sismember(TheSnaybir.."Snaybir:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnaybir.."Snaybir:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnaybir.."Snaybir:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = 'مبرمج السورس'
-elseif UserId == 1986614741 then
+elseif UserId == 474380639 then
 Status = 'مطور السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
@@ -708,12 +708,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه المسح *',
-unLock   = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه الكتم *',
-lockKid  = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه التقييد *',
-lockKick = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه الطرد *',
-Reply    = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n★︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه المسح *',
+unLock   = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه الكتم *',
+lockKid  = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه التقييد *',
+lockKick = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n★︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n★︙خاصيه الطرد *',
+Reply    = '[- Snaybir 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/iih5i)\n*— — — — — — — — —\n★︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -726,9 +726,9 @@ Managers = Redis:sismember(TheSnaybir.."Snaybir:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnaybir.."Snaybir:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnaybir.."Snaybir:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = true
-elseif UserId == 1986614741 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -765,9 +765,9 @@ Managers = Redis:sismember(TheSnaybir.."Snaybir:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(TheSnaybir.."Snaybir:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(TheSnaybir.."Snaybir:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = true
-elseif UserId == 1986614741 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -893,10 +893,10 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 1349843982 then
+if tonumber(msg.sender.user_id) == 474380639 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 1986614741 then
+elseif tonumber(msg.sender.user_id) == 474380639 then
 msg.Name_Controller = 'مطور السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
@@ -8098,7 +8098,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9404,23 +9404,23 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n*★︙مطور البوت : {*['.
 end
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/SNAYBIR2/319"
+photo = "https://t.me/IIH5I/56"
 local T =[[
-╔━━━━━━━━𓄼•★•𓄹━━━━━━━╗ 
-┇ ⦑𓆩.★ َِ𝗢ْ𝗺ْ𝗮َِ𝗥 ْ𝗮َِ𝗟 ُ𝗮َِ𝗛ْ𝗺َِ𝗘َِ𝗗 ★.𓆪⦒ ┇
-╚━━━━━━━━𓄼•★•𓄹━━━━━━━╝ 
+╔━━━━━𓄼•★•𓄹━━━━╗ 
+┇ ⦑ROULET SOURCE⦒ ┇
+╚━━━━━𓄼•★•𓄹━━━━╝ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '★ Developer', url = "https://t.me/OMMO10"},{text = '★ Exp Source .', url = "https://t.me/EPX_SNAYBIR"}
+{text = '★ Developer', url = "https://t.me/m98oh8"}
 },
 {
-{text = '★ TwS SNAYBIR', url = "https://t.me/QADHB_BOT"}
+{text = '★ ZKRAFA ROULET ', url = "https://t.me/J2U2BOT"}
 },
 {
-{text = ' ★ Source Channel', url = "https://t.me/SNAYBIR"}
+{text = ' ★ Source Channel', url = "https://t.me/iih5i"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9449,7 +9449,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = msg.sender.user_id..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9477,7 +9477,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9497,7 +9497,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9517,7 +9517,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9537,7 +9537,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9557,7 +9557,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9577,7 +9577,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -10430,7 +10430,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -10443,7 +10443,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11303,7 +11303,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11361,7 +11361,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11420,7 +11420,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11473,7 +11473,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11513,7 +11513,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11568,7 +11568,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11609,7 +11609,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'}, 
 },
 }
 }
