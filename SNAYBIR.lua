@@ -4679,7 +4679,7 @@ Abs = math.random(2,140);
 local Text ='*•︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4689,7 +4689,7 @@ Abs = math.random(2,140);
 local Text ='*✫︙تم اختيار متحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4699,7 +4699,7 @@ Abs = math.random(2,140);
 local Text ='*•︙تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/shaarshahum/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4709,7 +4709,7 @@ Abs = math.random(2,140);
 local Text ='*•︙تم اختيار الميمز لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/remixsource/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4831,7 +4831,7 @@ return https.request("https://api.telegram.org/bot"..Token..'/sendMessage?chat_i
 end
 end
 if text == 'مبرمج سورس' or text == 'مبرمج السورس' or text == 'المبرمج' then  
-local UserId_Info = LuaTele.searchPublicChat("OMMO10 ")
+local UserId_Info = LuaTele.searchPublicChat("m98oh8 ")
 if UserId_Info.id then
 local UserInfo = LuaTele.getUser(UserId_Info.id)
 local InfoUser = LuaTele.getUserFullInfo(UserId_Info.id)
