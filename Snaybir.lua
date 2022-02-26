@@ -125,9 +125,9 @@ end
 function Controllerbanall(ChatId,UserId)
 Status = 0
 DevelopersQ = Redis:sismember(itsSNAYBIR.."SNAYBIR:DevelopersQ:Groups",UserId) 
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = true
-elseif UserId == 1349843982 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -151,10 +151,10 @@ Managers = Redis:sismember(itsSNAYBIR.."SNAYBIR:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(itsSNAYBIR.."SNAYBIR:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = 'مبرمج السورس'
-elseif UserId == 1349843982 then
-Status = 'مطور السورس'
+elseif UserId == 474380639 then
+Status = 'مبرمج السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == itsSNAYBIR then
@@ -713,12 +713,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه المسح *',
-unLock   = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الكتم *',
-lockKid  = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه التقييد *',
-lockKick = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الطرد *',
-Reply    = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه المسح *',
+unLock   = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الكتم *',
+lockKid  = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه التقييد *',
+lockKick = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الطرد *',
+Reply    = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -770,9 +770,9 @@ Managers = Redis:sismember(itsSNAYBIR.."SNAYBIR:Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(itsSNAYBIR.."SNAYBIR:Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1349843982 then
+if UserId == 474380639 then
 Status = true
-elseif UserId == 1349843982 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -898,11 +898,11 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 1349843982 then
+if tonumber(msg.sender.user_id) == 474380639 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 1349843982 then
-msg.Name_Controller = 'مطور السورس '
+elseif tonumber(msg.sender.user_id) == 474380639 then
+msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
 msg.The_Controller = 1
@@ -1769,7 +1769,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url='https://t.me/SNAYBIR'},
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url='https://t.me/iih5i'},
 },
 }
 }
@@ -2033,7 +2033,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url='https://t.me/SNAYBIR'},
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url='https://t.me/iih5i'},
 },
 }
 }
@@ -4679,7 +4679,7 @@ Abs = math.random(2,140);
 local Text ='*•︙تم اختيار الاغنيه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ RouleT 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4689,7 +4689,7 @@ Abs = math.random(2,140);
 local Text ='*✫︙تم اختيار متحركه لك*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ RouleT 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendanimation?chat_id=' .. msg.chat_id .. '&animation=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4699,7 +4699,7 @@ Abs = math.random(2,140);
 local Text ='*•︙تم اختيار الشعر لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ RouleT 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/shaarshahum/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4709,7 +4709,7 @@ Abs = math.random(2,140);
 local Text ='*•︙تم اختيار الميمز لك فقط*'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/SNAYBIR"}},
+{{text = '✫ RouleT 𝖲𝗈𝗎𝗋𝖼𝖾 ',url="t.me/iih5i"}},
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/remixsource/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4720,7 +4720,7 @@ local Text ='*✫︙تم اختيار ريمكس لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4732,7 +4732,7 @@ local Text ='*✫︙تم اختيار الفلم لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4744,7 +4744,7 @@ local Text ='*✫︙تم اختيار انمي لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4756,7 +4756,7 @@ local Text ='*✫︙تم اختيار صوره لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4819,7 +4819,7 @@ local TestText = "  ✫ Developers Bot\n— — — — — — — — —\n �
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -4856,10 +4856,10 @@ local TestText = "✫ معلومات مبرمج السورس : \\nn: name Dev . 
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ 𝖼𝗈𝖽𝖾𝗋  ', url = "https://t.me/OMMO10"}
+{text = '✫ 𝖼𝗈𝖽𝖾𝗋  ', url = "https://t.me/m98oh8"}
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"},
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T ', url = "https://t.me/iih5i"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -4977,20 +4977,20 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 photo = "https://t.me/SNAYBIR2/319"
 local T =[[
 ╔━━━━━━━━𓄼•✫•𓄹━━━━━━━╗ 
-┇ ⦑𓆩.✫ َِ𝗢ْ𝗺ْ𝗮َِ𝗥 ْ𝗮َِ𝗟 ُ𝗮َِ𝗛ْ𝗺َِ𝗘َِ?? ✫.𓆪⦒ ┇
+┇ ⦑𓆩.✫MohammED?? ✫.𓆪⦒ ┇
 ╚━━━━━━━━𓄼•✫•𓄹━━━━━━━╝ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '✫ Developer', url = "https://t.me/OMMO10"},{text = '✫ Exp Source .', url = "https://t.me/EPX_SNAYBIR"}
+{text = '✫ Developer', url = "https://t.me/m98oh8"},{text = '✫ Exp Source .', url = "https://t.me/vvv24"}
 },
 {
-{text = '✫ TwS SNAYBIR', url = "https://t.me/QADHB_BOT"}
+{text = '✫ ROUL𝕱T ZRkAFA', url = "https://t.me/j2u2BOT"}
 },
 {
-{text = ' ✫ Source Channel', url = "https://t.me/SNAYBIR"}
+{text = ' ✫ Source Channel', url = "https://t.me/iih5i"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -9486,7 +9486,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = msg.sender.user_id..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9514,7 +9514,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9534,7 +9534,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9554,7 +9554,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9574,7 +9574,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9594,7 +9594,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9614,7 +9614,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9628,7 +9628,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ??ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ??ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9642,7 +9642,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9656,7 +9656,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9670,7 +9670,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9684,7 +9684,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9698,7 +9698,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9713,7 +9713,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9727,7 +9727,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9741,7 +9741,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9755,7 +9755,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9772,7 +9772,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9787,7 +9787,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9802,7 +9802,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9817,7 +9817,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9832,7 +9832,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9846,7 +9846,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9861,7 +9861,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9875,7 +9875,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9889,7 +9889,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9904,7 +9904,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9919,7 +9919,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9935,7 +9935,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9949,7 +9949,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9964,7 +9964,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -10008,7 +10008,7 @@ end
 if text == (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "SNAYBIR") then
 local NamesBot = (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "SNAYBIR")
 local NameBots = {
-"عمر "..NamesBot.. " شتريد؟",
+"زعيم "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
 "لتــلح دا احجي ويه بنات بعدين اجاوبك",
@@ -10821,7 +10821,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
 },
 }
 }
@@ -10834,7 +10834,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
 },
 }
 }
@@ -11721,7 +11721,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11779,7 +11779,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11838,7 +11838,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11891,7 +11891,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11931,7 +11931,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11986,7 +11986,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -12028,7 +12028,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْROUL𝕱T', url = 't.me/iih5i'}, 
 },
 }
 }
