@@ -51,6 +51,6 @@ sudo lua5.3 Roulet.lua
 echo -e "\e[1m\e[32mThe bot is running now : جاري تشغيل البوت الان : \e[0m"
 sleep 2
 sudo rm -rf luatele.zip
-sudo lua5.3 Snaybir.lua
+sudo lua5.3 Roulet.lua
 ;;
 esac
