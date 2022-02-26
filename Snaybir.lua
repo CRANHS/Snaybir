@@ -34,7 +34,7 @@ end
 else
 print('\27[1;34mلم يتم حفظ التوكن جرب مره اخره \nToken not saved, try again')
 end 
-os.execute('lua SNAYBIR.lua')
+os.execute('lua Snaybir.lua')
 end
 if not Redis:get(SshId.."Info:Redis:User") then
 io.write('\27[1;31mارسل معرف المطور الاساسي الان \nDeveloper UserName saved ↡\n\27[0;39;49m')
@@ -45,7 +45,7 @@ Redis:set(SshId.."Info:Redis:User",UserSudo)
 else
 print('\n\27[1;34mلم يتم حفظ معرف المطور الاساسي \nDeveloper UserName not saved\n')
 end 
-os.execute('lua SNAYBIR.lua')
+os.execute('lua Snaybir.lua')
 end
 if not Redis:get(SshId.."Info:Redis:User:ID") then
 io.write('\27[1;31mارسل ايدي المطور الاساسي الان \nDeveloper ID saved ↡\n\27[0;39;49m')
@@ -56,7 +56,7 @@ Redis:set(SshId.."Info:Redis:User:ID",UserId)
 else
 print('\n\27[1;34mلم يتم حفظ ايدي المطور الاساسي \nDeveloper ID not saved\n')
 end 
-os.execute('lua SNAYBIR.lua')
+os.execute('lua Snaybir.lua')
 end
 local Informationlua = io.open("Information.lua", 'w')
 Informationlua:write([[
@@ -68,25 +68,25 @@ SudoId = ]]..Redis:get(SshId.."Info:Redis:User:ID")..[[
 }
 ]])
 Informationlua:close()
-local itsSNAYBIR = io.open("itsSNAYBIR", 'w')
-itsSNAYBIR:write([[
+local itsSnaybir = io.open("itsSnaybir", 'w')
+itsSnaybir:write([[
 cd $(cd $(dirname $0); pwd)
 while(true) do
-sudo lua5.3 SNAYBIR.lua
+sudo lua5.3 Snaybir.lua
 done
 ]])
-itsSNAYBIR:close()
+itsSnaybir:close()
 local Run = io.open("Run", 'w')
 Run:write([[
 cd $(cd $(dirname $0); pwd)
 while(true) do
-screen -S itsSNAYBIR -X kill
-screen -S itsSNAYBIR ./itsSNAYBIR
+screen -S itsSnaybir -X kill
+screen -S itsSnaybir ./itsSnaybir
 done
 ]])
 Run:close()
 Redis:del(SshId.."Info:Redis:User:ID");Redis:del(SshId.."Info:Redis:User");Redis:del(SshId.."Info:Redis:Token:User");Redis:del(SshId.."Info:Redis:Token")
-os.execute('chmod +x itsSNAYBIR;chmod +x Run;./Run')
+os.execute('chmod +x itsSnaybir;chmod +x Run;./Run')
 end
 Information = dofile('./Information.lua')
 Sudo_Id = Information.SudoId
@@ -94,7 +94,7 @@ UserSudo = Information.UserSudo
 Token = Information.Token
 UserBot = Information.UserBot
 itsSNAYBIR = Token:match("(%d+)")
-os.execute('sudo rm -fr .CallBack-Bot/'..itsSNAYBIR)
+os.execute('sudo rm -fr .CallBack-Bot/'..itsSnaybir)
 LuaTele = luatele.set_config{api_id=2692371,api_hash='fe85fff033dfe0f328aeb02b4f784930',session_name=itsSNAYBIR,token=Token}
 function var(value)  
 print(serpent.block(value, {comment=false}))   
@@ -124,14 +124,14 @@ return ControllerAll
 end
 function Controllerbanall(ChatId,UserId)
 Status = 0
-DevelopersQ = Redis:sismember(itsSNAYBIR.."SNAYBIR:DevelopersQ:Groups",UserId) 
+DevelopersQ = Redis:sismember(itsSnaybir.."Snaybir:DevelopersQ:Groups",UserId) 
 if UserId == 474380639 then
 Status = true
 elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
-elseif UserId == itsSNAYBIR then
+elseif UserId == itsSnaybir then
 Status = true
 elseif DevelopersQ then
 Status = true
@@ -142,14 +142,14 @@ return Status
 end
 function Controller(ChatId,UserId)
 Status = 0
-Developers = Redis:sismember(itsSNAYBIR.."SNAYBIR:Developers:Groups",UserId) 
-DevelopersQ = Redis:sismember(itsSNAYBIR.."SNAYBIR:DevelopersQ:Groups",UserId) 
-TheBasics = Redis:sismember(itsSNAYBIR.."SNAYBIR:TheBasics:Group"..ChatId,UserId)
-TheBasicsQ = Redis:sismember(itsSNAYBIR.."SNAYBIR:TheBasicsQ:Group"..ChatId,UserId) 
-Originators = Redis:sismember(itsSNAYBIR.."SNAYBIR:Originators:Group"..ChatId,UserId)
-Managers = Redis:sismember(itsSNAYBIR.."SNAYBIR:Managers:Group"..ChatId,UserId)
-Addictive = Redis:sismember(itsSNAYBIR.."SNAYBIR:Addictive:Group"..ChatId,UserId)
-Distinguished = Redis:sismember(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatId,UserId)
+Developers = Redis:sismember(itsSnaybir.."Snaybir:Developers:Groups",UserId) 
+DevelopersQ = Redis:sismember(itsSnaybir.."Snaybir:DevelopersQ:Groups",UserId) 
+TheBasics = Redis:sismember(itsSnaybir.."Snaybir:TheBasics:Group"..ChatId,UserId)
+TheBasicsQ = Redis:sismember(itsSnaybir.."Snaybir:TheBasicsQ:Group"..ChatId,UserId) 
+Originators = Redis:sismember(itsSnaybir.."Snaybir:Originators:Group"..ChatId,UserId)
+Managers = Redis:sismember(itsSnaybir.."Snaybir:Managers:Group"..ChatId,UserId)
+Addictive = Redis:sismember(itsSnaybir.."Snaybir:Addictive:Group"..ChatId,UserId)
+Distinguished = Redis:sismember(itsSnaybir.."Snaybir:Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 474380639 then
 Status = 'مبرمج السورس'
@@ -12690,56 +12690,56 @@ end
 elseif Text and Text:match('(%d+)/mute_Id') then
 local UserId = Text:match('(%d+)/mute_Id')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:Id"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:Id"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر الايدي").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_IdPhoto') then
 local UserId = Text:match('(%d+)/mute_IdPhoto')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:IdPhoto"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:IdPhoto"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر الايدي بالصوره").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_ryple') then
 local UserId = Text:match('(%d+)/mute_ryple')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:Reply"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:Reply"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر ردود المدير").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_ryplesudoo') then
 local UserId = Text:match('(%d+)/mute_ryplesudoo')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:ReplySudo"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:ReplySudo"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر ردود المطور").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_setadmib') then
 local UserId = Text:match('(%d+)/mute_setadmib')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:SetId"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:SetId"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر الرفع").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_kickmembars') then
 local UserId = Text:match('(%d+)/mute_kickmembars')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:BanId"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:BanId"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر الطرد - الحظر").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_games') then
 local UserId = Text:match('(%d+)/mute_games')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:Games"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:Games"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر الالعاب").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/mute_kickme') then
 local UserId = Text:match('(%d+)/mute_kickme')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:set(itsSNAYBIR.."SNAYBIR:Status:KickMe"..ChatId,true) 
+Redis:set(itsSnaybir.."Snaybir:Status:KickMe"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'listallAddorrem'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم تفعيل امر اطردني").unLock, 'md', true, false, reply_markup)
 end
@@ -12754,10 +12754,10 @@ y = 0
 for k, v in pairs(List_Members) do
 if Info_Members.members[k].bot_info == nil then
 if Info_Members.members[k].status.luatele == "chatMemberStatusCreator" then
-Redis:sadd(itsSNAYBIR.."SNAYBIR:TheBasics:Group"..UserId[2],v.member_id.user_id) 
+Redis:sadd(itsSnaybir.."Snaybir:TheBasics:Group"..UserId[2],v.member_id.user_id) 
 x = x + 1
 else
-Redis:sadd(itsSNAYBIR.."SNAYBIR:Addictive:Group"..UserId[2],v.member_id.user_id) 
+Redis:sadd(itsSnaybir.."Snaybir:Addictive:Group"..UserId[2],v.member_id.user_id) 
 y = y + 1
 end
 end
@@ -13611,175 +13611,175 @@ end
 elseif Text and Text:match('(%d+)/unlock_link') then
 local UserId = Text:match('(%d+)/unlock_link')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Link"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Link"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الروابط").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_spam') then
 local UserId = Text:match('(%d+)/unlock_spam')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Spam"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Spam"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الكلايش").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_keypord') then
 local UserId = Text:match('(%d+)/unlock_keypord')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Keyboard"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Keyboard"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الكيبورد").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_voice') then
 local UserId = Text:match('(%d+)/unlock_voice')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:vico"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:vico"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الاغاني").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_gif') then
 local UserId = Text:match('(%d+)/unlock_gif')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Animation"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Animation"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح المتحركات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_files') then
 local UserId = Text:match('(%d+)/unlock_files')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Document"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Document"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الملفات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_text') then
 local UserId = Text:match('(%d+)/unlock_text')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:text"..ChatId,true) 
+Redis:del(itsSnaybir.."Snaybir:Lock:text"..ChatId,true) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الدردشه").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_video') then
 local UserId = Text:match('(%d+)/unlock_video')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Video"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Video"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الفيديو").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_photo') then
 local UserId = Text:match('(%d+)/unlock_photo')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Photo"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Photo"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الصور").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_username') then
 local UserId = Text:match('(%d+)/unlock_username')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:User:Name"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:User:Name"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح المعرفات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_tags') then
 local UserId = Text:match('(%d+)/unlock_tags')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:hashtak"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:hashtak"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح التاك").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_bots') then
 local UserId = Text:match('(%d+)/unlock_bots')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Bot:kick"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Bot:kick"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح البوتات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_fwd') then
 local UserId = Text:match('(%d+)/unlock_fwd')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:forward"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:forward"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح التوجيه").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_audio') then
 local UserId = Text:match('(%d+)/unlock_audio')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Audio"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Audio"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الصوت").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_stikear') then
 local UserId = Text:match('(%d+)/unlock_stikear')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Sticker"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Sticker"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الملصقات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_phone') then
 local UserId = Text:match('(%d+)/unlock_phone')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Contact"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Contact"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الجهات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_joine') then
 local UserId = Text:match('(%d+)/unlock_joine')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Join"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Join"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الدخول").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_addmem') then
 local UserId = Text:match('(%d+)/unlock_addmem')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:AddMempar"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:AddMempar"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الاضافه").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_videonote') then
 local UserId = Text:match('(%d+)/unlock_videonote')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Unsupported"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Unsupported"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح بصمه الفيديو").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_pin') then
 local UserId = Text:match('(%d+)/unlock_pin')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:lockpin"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:lockpin"..ChatId) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح التثبيت").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_tgservir') then
 local UserId = Text:match('(%d+)/unlock_tgservir')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:tagservr"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:tagservr"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الاشعارات").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_markdaun') then
 local UserId = Text:match('(%d+)/unlock_markdaun')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:Markdaun"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:Markdaun"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الماركدون").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_edits') then
 local UserId = Text:match('(%d+)/unlock_edits')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:edit"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:Lock:edit"..ChatId) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح التعديل").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_games') then
 local UserId = Text:match('(%d+)/unlock_games')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Lock:geam"..ChatId)  
+Redis:del(itsSnaybir.."Snaybir:Lock:geam"..ChatId)  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح الالعاب").unLock, 'md', true, false, reply_markup)
 end
 elseif Text and Text:match('(%d+)/unlock_flood') then
 local UserId = Text:match('(%d+)/unlock_flood')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:hdel(itsSNAYBIR.."SNAYBIR:Spam:Group:User"..ChatId ,"Spam:User")  
+Redis:hdel(itsSnaybir.."Snaybir:Spam:Group:User"..ChatId ,"Spam:User")  
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,Reply_Status(IdUser,"✫︙تم فتح التكرار").unLock, 'md', true, false, reply_markup)
 end
@@ -13787,68 +13787,68 @@ end
 if Text and Text:match('(%d+)/Developers') then
 local UserId = Text:match('(%d+)/Developers')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Developers:Groups") 
+Redis:del(itsSnaybir.."Snaybir:Developers:Groups") 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح مطورين البوت", 'md', false)
 end
 elseif Text and Text:match('(%d+)/DevelopersQ') then
 local UserId = Text:match('(%d+)/DevelopersQ')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:DevelopersQ:Groups") 
+Redis:del(itsSnaybir.."Snaybir:DevelopersQ:Groups") 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح مطورين الثانوين من البوت", 'md', false)
 end
 elseif Text and Text:match('(%d+)/TheBasics') then
 local UserId = Text:match('(%d+)/TheBasics')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:TheBasics:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:TheBasics:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المنشئين الاساسيين", 'md', false)
 end
 elseif Text and Text:match('(%d+)/TheBasicsQ') then
 local UserId = Text:match('(%d+)/TheBasicsQ')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:TheBasicsQ:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:TheBasicsQ:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المالكين", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Originators') then
 local UserId = Text:match('(%d+)/Originators')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Originators:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:Originators:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح منشئين المجموعه", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Managers') then
 local UserId = Text:match('(%d+)/Managers')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Managers:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:Managers:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المدراء", 'md', false)
 end
 elseif Text and Text:match('(%d+)/Addictive') then
 local UserId = Text:match('(%d+)/Addictive')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Addictive:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:Addictive:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح ادمنيه المجموعه", 'md', false)
 end
 elseif Text and Text:match('(%d+)/DelDistinguished') then
 local UserId = Text:match('(%d+)/DelDistinguished')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:Distinguished:Group"..ChatId) 
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '- رجوع', data =UserId..'/'.. 'NoNextSeting'},},}}
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المميزين", 'md', false)
 end
 elseif Text and Text:match('(%d+)/BanAll') then
 local UserId = Text:match('(%d+)/BanAll')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:BanAll:Groups") 
+Redis:del(itsSnaybir.."Snaybir:BanAll:Groups") 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المحظورين عام", 'md', false)
 end
 elseif Text and Text:match('(%d+)/BanGroup') then
 local UserId = Text:match('(%d+)/BanGroup')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:BanGroup:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:BanGroup:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المحظورين", 'md', false)
 end
 elseif Text and Text:match('(%d+)/SilentGroupGroup') then
 local UserId = Text:match('(%d+)/SilentGroupGroup')
 if tonumber(IdUser) == tonumber(UserId) then
-Redis:del(itsSNAYBIR.."SNAYBIR:SilentGroup:Group"..ChatId) 
+Redis:del(itsSnaybir.."Snaybir:SilentGroup:Group"..ChatId) 
 LuaTele.editMessageText(ChatId,Msg_id,"✫︙تم مسح المكتومين", 'md', false)
 end
 end
