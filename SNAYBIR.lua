@@ -1572,7 +1572,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url='https://t.me/SNAYBIR'},
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url='https://t.me/iih5i'},
 },
 }
 }
@@ -1769,7 +1769,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url='https://t.me/SNAYBIR'},
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url='https://t.me/iih5i'},
 },
 }
 }
@@ -2033,7 +2033,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url='https://t.me/SNAYBIR'},
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url='https://t.me/iih5i'},
 },
 }
 }
@@ -4329,7 +4329,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url='https://t.me/SNAYBIR'},
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url='https://t.me/iih5i'},
 },
 }
 }
@@ -4720,7 +4720,7 @@ local Text ='*✫︙تم اختيار ريمكس لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4732,7 +4732,7 @@ local Text ='*✫︙تم اختيار الفلم لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4744,7 +4744,7 @@ local Text ='*✫︙تم اختيار انمي لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4756,7 +4756,7 @@ local Text ='*✫︙تم اختيار صوره لك*'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4791,7 +4791,7 @@ local TestText = "  ✫ Owner Groups\n— — — — — — — — —\n •�
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -4819,7 +4819,7 @@ local TestText = "  ✫ Developers Bot\n— — — — — — — — —\n �
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -4842,11 +4842,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ✫ SNAYBIR 𝖲𝗈𝗎𝗋𝖼𝖾 \n— — — — — — — — —\n •︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n•︙*Dev Bio* : [✫ "..Bio.." ]"
+local TestText = "  ✫ RouleT 𝖲𝗈𝗎𝗋𝖼𝖾 \n— — — — — — — — —\n •︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n•︙*Dev Bio* : [✫ "..Bio.." ]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"}
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -4856,10 +4856,10 @@ local TestText = "✫ معلومات مبرمج السورس : \\nn: name Dev . 
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = '✫ 𝖼𝗈𝖽𝖾𝗋  ', url = "https://t.me/OMMO10"}
+{text = '✫ 𝖼𝗈𝖽𝖾𝗋  ', url = "https://t.me/m98oh8"}
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR ', url = "https://t.me/SNAYBIR"},
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓 ', url = "https://t.me/iih5i"},
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -4974,23 +4974,23 @@ Redis:set(itsSNAYBIR.."SNAYBIR:Set:Id:Group"..msg.chat_id,Text_Rand)
 return LuaTele.sendText(msg_chat_id,msg_id, '•︙تم التغيير ارسل ايدي لعرض الايدي الجديد',"md",true)  
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
-photo = "https://t.me/SNAYBIR2/319"
+photo = "https://t.me/llll4ll/7"
 local T =[[
 ╔━━━━━━━━𓄼•✫•𓄹━━━━━━━╗ 
-┇ ⦑𓆩.✫ َِ𝗢ْ𝗺ْ𝗮َِ𝗥 ْ𝗮َِ𝗟 ُ𝗮َِ𝗛ْ𝗺َِ𝗘َِ?? ✫.𓆪⦒ ┇
+┇ ⦑𓆩.✫ َِMohammeD?? ✫.𓆪⦒ ┇
 ╚━━━━━━━━𓄼•✫•𓄹━━━━━━━╝ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 
 {
-{text = '✫ Developer', url = "https://t.me/OMMO10"},{text = '✫ Exp Source .', url = "https://t.me/EPX_SNAYBIR"}
+{text = '✫ Developer', url = "https://t.me/m98oh8"},{text = '✫ Exp Source .', url = "https://t.me/iih5i"}
 },
 {
-{text = '✫ TwS SNAYBIR', url = "https://t.me/QADHB_BOT"}
+{text = '✫ RoUleT ZKRAFA', url = "https://t.me/j2u2BOT"}
 },
 {
-{text = ' ✫ Source Channel', url = "https://t.me/SNAYBIR"}
+{text = ' ✫ Source Channel', url = "https://t.me/Iih5i"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -8150,7 +8150,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9486,7 +9486,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = msg.sender.user_id..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9514,7 +9514,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9534,7 +9534,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9554,7 +9554,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9574,7 +9574,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9594,7 +9594,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9614,7 +9614,7 @@ data = {
 {text = '{ قائمه الاوامر }', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9628,7 +9628,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ??ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9642,7 +9642,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9656,7 +9656,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9670,7 +9670,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9684,7 +9684,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9698,7 +9698,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9713,7 +9713,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9727,7 +9727,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9741,7 +9741,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9755,7 +9755,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9772,7 +9772,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/َiih5i'}, 
 },
 }
 }
@@ -9787,7 +9787,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9802,7 +9802,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9817,7 +9817,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9832,7 +9832,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9846,7 +9846,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9861,7 +9861,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9875,7 +9875,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9889,7 +9889,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9904,7 +9904,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9919,7 +9919,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9935,7 +9935,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9949,7 +9949,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -9964,7 +9964,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ َِSٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -10005,10 +10005,10 @@ end
 Redis:del(itsSNAYBIR.."SNAYBIR:Name:Bot") 
 return LuaTele.sendText(msg_chat_id,msg_id,"✫︙تم حذف اسم البوت ","md",true)   
 end
-if text == (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "SNAYBIR") then
-local NamesBot = (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "SNAYBIR")
+if text == (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "RouleT") then
+local NamesBot = (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "RouleT")
 local NameBots = {
-"عمر "..NamesBot.. " شتريد؟",
+"زعيم "..NamesBot.. " شتريد؟",
 "أჂ̤ أჂ̤ هياتني اني",
 "موجود بس لتصيح",
 "لتــلح دا احجي ويه بنات بعدين اجاوبك",
@@ -10018,7 +10018,7 @@ local NameBots = {
 return LuaTele.sendText(msg_chat_id,msg_id, NameBots[math.random(#NameBots)],"md",true)  
 end
 if text == "بوت" then
-local NamesBot = (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "SNAYBIR")
+local NamesBot = (Redis:get(itsSNAYBIR.."SNAYBIR:Name:Bot") or "RouleT")
 local BotName = {
 "باوع لك خليني احبك وصيحلي باسمي "..NamesBot,
 "لتخليني ارجع لحركاتي لقديمه وردا ترا اسمي "..NamesBot.. "",
@@ -10821,7 +10821,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
 },
 }
 }
@@ -10834,7 +10834,7 @@ data = {
 {text = '➕ اضفني لمجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = '- قناة السورس', url = 't.me/SNAYBIR'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
+{text = '- قناة السورس', url = 't.me/iih5i'},{text = '✫ لتنصيب بوت', url = 't.me/OMMO10'}, 
 },
 }
 }
@@ -11721,7 +11721,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11779,7 +11779,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11838,7 +11838,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11891,7 +11891,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11931,7 +11931,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -11986,7 +11986,7 @@ data = {
 {text = '{ القائمه الرئيسيه }', data = IdUser..'/helpall'},
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
@@ -12028,7 +12028,7 @@ data = {
 {text = '{ اوامر القفل / الفتح }', data = IdUser..'/NoNextSeting'}, {text = '{ اوامر التعطيل / التفعيل }', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '✫ Sُِ𝙾َِUِۛ𝚁ِ۬ۘSِۨ𝙴 ِْSِْ𝙽َِۙAِ͚ۛ𝚈َِIِۗ𝙱َِR', url = 't.me/SNAYBIR'}, 
+{text = '✫ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT𖤓', url = 't.me/iih5i'}, 
 },
 }
 }
