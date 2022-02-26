@@ -127,7 +127,7 @@ Status = 0
 DevelopersQ = Redis:sismember(itsSNAYBIR.."SNAYBIR:DevelopersQ:Groups",UserId) 
 if UserId == 1349843982 then
 Status = true
-elseif UserId == 1349843982 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -153,8 +153,8 @@ Distinguished = Redis:sismember(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatI
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1349843982 then
 Status = 'مبرمج السورس'
-elseif UserId == 1349843982 then
-Status = 'مطور السورس'
+elseif UserId == 474380639 then
+Status = 'مبرمج السورس'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == itsSNAYBIR then
@@ -713,12 +713,12 @@ else
 UserInfousername = '['..UserInfo.first_name..'](tg://user?id='..UserId..')'
 end
 return {
-Lock     = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه المسح *',
-unLock   = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
-lockKtm  = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الكتم *',
-lockKid  = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه التقييد *',
-lockKick = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الطرد *',
-Reply    = '[- TeaM SNAYBIR .](https://t.me/SNAYBIR)\n*— — — — — — — — —\n✫︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
+Lock     = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه المسح *',
+unLock   = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n'..TextMsg,
+lockKtm  = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الكتم *',
+lockKid  = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه التقييد *',
+lockKick = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙بواسطه ← *'..UserInfousername..'\n*'..TextMsg..'\n✫︙خاصيه الطرد *',
+Reply    = '[- TeaM RouleT .](https://t.me/iih5i)\n*— — — — — — — — —\n✫︙المستخدم ← *'..UserInfousername..'\n*'..TextMsg..'*'
 }
 end
 function StatusCanOrNotCan(ChatId,UserId)
@@ -733,7 +733,7 @@ Distinguished = Redis:sismember(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatI
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1349843982 then
 Status = true
-elseif UserId == 1349843982 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -772,7 +772,7 @@ Distinguished = Redis:sismember(itsSNAYBIR.."SNAYBIR:Distinguished:Group"..ChatI
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
 if UserId == 1349843982 then
 Status = true
-elseif UserId == 1349843982 then
+elseif UserId == 474380639 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -901,8 +901,8 @@ end
 if tonumber(msg.sender.user_id) == 1349843982 then
 msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
-elseif tonumber(msg.sender.user_id) == 1349843982 then
-msg.Name_Controller = 'مطور السورس '
+elseif tonumber(msg.sender.user_id) == 474380639 then
+msg.Name_Controller = 'مبرمج السورس '
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
 msg.The_Controller = 1
