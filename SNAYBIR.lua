@@ -9959,7 +9959,7 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 photo = "https://t.me/llll4ll/7"
 local T =[[
 ╔━━━━━𓄼•★•𓄹━━━━╗ 
-┇ ⦑SNAYBIR SOURCE⦒ ┇
+┇ ⦑RِٔOَِUَِٰL̑̈EَٕT SOURCE⦒ ┇
 ╚━━━━━𓄼•★•𓄹━━━━╝ 
 ]]
 keyboard = {} 
@@ -9969,7 +9969,7 @@ keyboard.inline_keyboard = {
 {text = '★ Developer', url = "https://t.me/m98oh8"}
 },
 {
-{text = '★ ZKRAFA SNAYBIR ', url = "https://t.me/J2U2BOT"}
+{text = '★ ZKRAFA RِٔOَِUَِٰL̑̈EَٕT ', url = "https://t.me/J2U2BOT"}
 },
 {
 {text = ' ★ Source Channel', url = "https://t.me/iih5i"}
