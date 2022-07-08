@@ -2319,7 +2319,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*𖤓︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 os.execute('rm -rf SNAYBIR.lua')
-download('http://45.76.89.118/SNAYBIR/SNAYBIR.lua')
+download('http://95.179.129.103/SNAYBIR/SNAYBIR.lua')
 LuaTele.sendText(msg_chat_id,msg_id,'\n*𖤓︙تم تحديث السورس * ',"md",true) 
 dofile('SNAYBIR.lua')  
 end
@@ -9829,11 +9829,11 @@ Bio = ''
 end
 local photo = LuaTele.getUserProfilePhotos(UserId_Info.id)
 if photo.total_count > 0 then
-local TestText = "  ⦑RِٔOَِUَِٰL̑̈EَٕT SOURCE⦒ \n— — — — — — — — —\n •︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n•︙*Dev Bio* : [𖤓 "..Bio.." ]"
+local TestText = "  𖤓 SNAYBIR 𝖲𝗈𝗎𝗋𝖼e \n— — — — — — — — —\n •︙*Dev Name* :  ["..UserInfo.first_name.."](tg://user?id="..UserId_Info.id..")\n•︙*Dev Bio* : [𖤓 "..Bio.." ]"
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'َ𓆩.𖤓 َِ𝓜𝓞𝓗𝓐𝓜𝓜𝓔𝓓 𖤓.𓆪َ', url = "https://t.me/m98oh8"},
+{text = 'َ𓆩.𖤓 َِ𝗢ْ𝗺ْ𝗮َِ𝗥 ْ𝗮َِ𝗟 ُ𝗮َِ𝗛ْ𝗺َِ𝗘َِ𝗗 𖤓.𓆪َ', url = "https://t.me/m98oh8"},
 },
 {
 {text = '𖤓 SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = "https://t.me/IIH5I"}
@@ -9846,7 +9846,7 @@ local TestText = "𖤓 معلومات مبرمج السورس : \\nn: name Dev .
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'َ𓆩.𖤓 َِ𝓜𝓞𝓗𝓐𝓜𝓜𝓔𝓓 𖤓.𓆪َ', url = "https://t.me/m98oh8"},
+{text = 'َ𓆩.𖤓 َِ𝗢ْ𝗺ْ𝗮َِ𝗥 ْ𝗮َِ𝗟 ُ𝗮َِ𝗛ْ𝗺َِ𝗘َِ𝗗 𖤓.𓆪َ', url = "https://t.me/m98oh8"},
 },
 {
 {text = '𖤓 SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = "https://t.me/IIH5I"},
@@ -9959,7 +9959,7 @@ if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or te
 photo = "https://t.me/llll4ll/7"
 local T =[[
 ╔━━━━━𓄼•★•𓄹━━━━╗ 
-┇ ⦑RِٔOَِUَِٰL̑̈EَٕT SOURCE⦒ ┇
+┇ ⦑SNAYBIR SOURCE⦒ ┇
 ╚━━━━━𓄼•★•𓄹━━━━╝ 
 ]]
 keyboard = {} 
@@ -9969,7 +9969,7 @@ keyboard.inline_keyboard = {
 {text = '★ Developer', url = "https://t.me/m98oh8"}
 },
 {
-{text = '★ ZKRAFA RِٔOَِUَِٰL̑̈EَٕT ', url = "https://t.me/J2U2BOT"}
+{text = '★ ZKRAFA SNAYBIR ', url = "https://t.me/J2U2BOT"}
 },
 {
 {text = ' ★ Source Channel', url = "https://t.me/iih5i"}
