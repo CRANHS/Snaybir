@@ -2392,7 +2392,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص { '..Controller_Num(1)..' }* ',"md",true)  
 end
 os.execute('rm -rf SNAYBIR.lua')
-download('http://95.179.129.103/SNAYBIR/SNAYBIR.lua')
+download('http://209.250.243.93/SNAYBIR/SNAYBIR.lua')
 LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙تم تحديث السورس * ',"md",true) 
 dofile('SNAYBIR.lua')  
 end
