@@ -6959,13 +6959,7 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/PhotosWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 end
-if text == "ريمكس" or text == "↫ ريمكس ✯" then
-if not Redis:get(TheSNAYBIR..'SNAYBIR:Status:Remix'..msg.chat_id) then
-Abs = math.random(2,400); 
-local Text ='*✠┊تم اختيار الريمكس لك*'
-local msg_id = msg.id/2097152/0.5
-https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown") 
-end
+
 if text == 'تعطيل التحقق' then
 if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*✫︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
