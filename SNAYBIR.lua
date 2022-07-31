@@ -1643,9 +1643,6 @@ data = {
 {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT ⁦', url='https://t.me/IIH5I'},
-},
 }
 }
 LuaTele.sendText(msg_chat_id,msg_id,[[
@@ -1839,9 +1836,6 @@ data = {
 },
 {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT ⁦', url='https://t.me/IIH5I'},
 },
 }
 }
@@ -2113,9 +2107,6 @@ data = {
 },
 {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT ⁦', url='https://t.me/IIH5I'},
 },
 }
 }
@@ -2871,9 +2862,6 @@ data = {
 {
 {text = 'تفعيل الايدي ✮', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
 },
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'},
-},
 }
 }
 if not msg.ControllerBot then
@@ -2953,9 +2941,6 @@ data = {
 },
 {
 {text = 'تفعيل الايدي ✮', data = msg.sender.user_id..'/'.. 'mute_IdPhoto'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'},
 },
 }
 }
@@ -3301,11 +3286,7 @@ Redis:set(TheSNAYBIR.."SNAYBIR:Set:Id:Group"..msg.chat_id,Text_Rand)
 return LuaTele.sendText(msg_chat_id,msg_id, '✮︙تم التغيير ارسل ايدي لعرض الايدي الجديد',"md",true)  
 end
 if text == 'رتبتي' then
-local ban = LuaTele.getUser(msg.sender.user_id)
-local news = ' '..msg.Name_Controller
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
-{{text =news,url = "https://t.me/IIH5I"}, },}}
-return LuaTele.sendText(msg_chat_id,msg_id,'\n✮︙رتبتك هي : '..msg.Name_Controller,"md", false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'\n⌔︙رتبتك هي : '..msg.Name_Controller,"md",true)  
 end
 if text == 'ايديي' then
 return LuaTele.sendText(msg_chat_id,msg_id,'\nايديك -› '..msg.sender.user_id,"md",true)  
@@ -4721,6 +4702,10 @@ if TextMsg == 'ردود السورس' then
 Redis:set(TheSNAYBIR.."SNAYBIR:Status:ReplySudo"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تفعيل ردود السورس *","md",true)
 end
+if TextMsg == 'التسليه' then
+Redis:set(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id,true) 
+return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تفعيل التسليه *","md",true)
+end
 if TextMsg == 'التاك التلقائي' then
 Redis:set(TheSNAYBIR.."SNAYBIR:Tagat"..msg_chat_id,true) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تفعيل التاك التلقائي*","md",true)
@@ -4771,9 +4756,6 @@ data = {
 },
 {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url='https://t.me/IIH5I'},
 },
 }
 }
@@ -5104,7 +5086,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص 
 end
 if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅??𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
 end
 if TextMsg == 'الرابط' then
 Redis:del(TheSNAYBIR.."SNAYBIR:Status:Link"..msg_chat_id) 
@@ -5204,12 +5186,16 @@ if TextMsg == 'ردود السورس' then
 Redis:del(TheSNAYBIR.."SNAYBIR:Status:ReplySudo"..msg_chat_id) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تعطيل ردود السورس *","md",true)
 end
+if TextMsg == 'التسليه' then
+Redis:del(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) 
+return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تعطيل التسليه*","md",true)
+end
 if TextMsg == 'التاك التلقائي' then
 Redis:del(TheSNAYBIR.."SNAYBIR:Tagat"..msg_chat_id) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تعطيل التاك التلقائي *","md",true)
 end
 if TextMsg == 'الثنائي' then
-Redis:del(TheSNAYBIR.."SNAYBIR:Tagat"..msg_chat_id) 
+Redis:del(TheSNAYBIR.."SNAYBIR:thnaee"..msg_chat_id) 
 return LuaTele.sendText(msg_chat_id,msg_id,"*✮︙ تم تعطيل الثنائي*","md",true)
 end
 if TextMsg == 'نزلني' then
@@ -6903,6 +6889,9 @@ end
 end
 end
 if text == "غنيلي" or text == "غني" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار الاغنيه ياحلو ❤*'
 local MsgId = msg.id/2097152/0.5
@@ -6910,6 +6899,9 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/TEAMSUL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "متحركه" or text == "مت" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار المتحركة ياحلو 💞*'
 local MsgId = msg.id/2097152/0.5
@@ -6917,20 +6909,29 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/GifDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "شعر" or text == "ش" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار الشعر ياحلو💙*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/L1BBBL/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
-if text == "ميمز" or text == "مي" then 
+if text == "ميمز" or text == "مي" then
+ if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار الميمز ياحلو💛*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MemzWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
-if text == "فللم" or text == "فلم" then 
+if text == "فللم" or text == "فلم" then
+ if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار الفلم ياحلو🙈*'
 local MsgId = msg.id/2097152/0.5
@@ -6938,6 +6939,9 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/MoviesWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "نمي" or text == "انمي" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار انمي ياحلو🤤*'
 local MsgId = msg.id/2097152/0.5
@@ -6945,6 +6949,9 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/AnimeDavid/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "غنيه" or text == "اغنيه" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار اغنيه ياحلو💚*'
 local MsgId = msg.id/2097152/0.5
@@ -6952,11 +6959,24 @@ local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/lDIDIl/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 if text == "صورة" or text == "صوره" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 Abs = math.random(2,140); 
 local Text ='*✯︙تم اختيار صوره ياحلو 😩*'
 local MsgId = msg.id/2097152/0.5
 local MSGID = string.gsub(MsgId,'.0','')
 https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/PhotosWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
+end
+if text == "ريماكس" or text == "ريمكس" then 
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
+Abs = math.random(2,140); 
+local Text ='*✯︙تم اختيار ريمكس ياحلو 💘*'
+local MsgId = msg.id/2097152/0.5
+local MSGID = string.gsub(MsgId,'.0','')
+https.request("https://api.telegram.org/bot"..Token..'/sendVoice?chat_id=' .. msg.chat_id .. '&voice=https://t.me/RemixWaTaN/'..Abs..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..MsgId.."&parse_mode=markdown") 
 end
 
 
@@ -6975,10 +6995,16 @@ Redis:set(TheSNAYBIR.."SNAYBIR:Status:joinet"..msg_chat_id,true)
 return LuaTele.sendText(msg_chat_id,msg_id,"▽︙تم تفعيل التحقق ","md",true)
 end
 if text == "شنو رئيك بهذا" or text == "شنو رئيك بهذ" then
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 local texting = {"ادب سسز يباوع علي بنات ??🥺"," مو خوش ولد 😶","زاحف وما احبه 😾😹"}
 LuaTele.sendText(msg.chat_id,msg.id,"*"..texting[math.random(#texting)].."*","md", true)
 end
 if text == "شنو رئيك بهاي" or text == "شنو رئيك بهايي" then
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 local texting = {"دور حلوين 🤕😹","جكمه وصخه عوفها ☹️😾","حقيره ومنتكبره 😶😂"}
 LuaTele.sendText(msg.chat_id,msg.id,"*"..texting[math.random(#texting)].."*","md", true)
 end
@@ -7001,6 +7027,9 @@ LuaTele.sendText(msg.chat_id,msg.reply_to_message_id,"*"..sendheen.."*","md", tr
 end
 
 if text == "بوسه" or text == "بوسها" or text == "مصه" then
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 heen = {
 "اهممممواح🙈😉.",
 "عيع خدك وصخ 😹🏃‍♀️.",
@@ -7017,6 +7046,9 @@ end
 LuaTele.sendText(msg.chat_id,msg.reply_to_message_id,"*"..sendheen.."*","md", true)
 end
 if text == "اتفل" or text == "تفله" or text == "اتفل عليها" or text == "اتفل عليه" then
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 heen = {
 "اخخختفووو ام لمخاطيه بكصتك 😹🏃‍♀️.",
 "اختفوووو يلعار ابلع من عمك 😹🏃‍♀️.",
@@ -7049,6 +7081,9 @@ LuaTele.sendText(msg.chat_id,0,'*'..texting[math.random(#texting)]..'*'..usr,'md
 end
 end
 if text == "منو اني" or text == 'اني منو' then
+if not Redis:get(TheSNAYBIR.."SNAYBIR:Status:Tslai"..msg_chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ التسليه معطله [ارسل تفعيل التسليه]*","md",true)  
+end
 if msg.sender.user_id == tonumber(1349843982) then
 LuaTele.sendText(msg_chat_id,msg_id,"‹ : انت عموري مطور السورس يقلبي🌚💘","md",true)
 elseif msg.sender.user_id == tonumber(Sudo_Id) then
@@ -7075,6 +7110,7 @@ end
 end
 if text == 'ثنائي' then
 if not Redis:get(TheSNAYBIR.."SNAYBIR:thnaee"..msg.chat_id) then
+return LuaTele.sendText(msg_chat_id,msg_id,"* ✮ الثنائي معطل [ارسل تفعيل الثنائي]*","md",true)  
 end
 time = os.date("*t")
 hour = time.hour
@@ -7467,7 +7503,7 @@ if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂??𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅𝖼??𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
 end
 Redis:set(TheSNAYBIR.."SNAYBIR:Lock:Video"..msg_chat_id,"ked")  
@@ -7839,7 +7875,7 @@ if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 ??𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
 end
 Redis:set(TheSNAYBIR.."SNAYBIR:Lock:Sticker"..msg_chat_id,"ktm")  
@@ -8949,14 +8985,6 @@ local protectionGroup = '\n*✮︙اعدادات حمايه المجموعه\n �
 ..'\n✮︙الحظر - الطرد ➤ '..StatusBanId
 ..'\n✮︙الالعاب ➤ '..StatusGames
 ..'\n✮︙امر اطردني ➤ '..Statuskickme..'*\n\n.'
-local reply_markup = LuaTele.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
-},
-}
-}
 return LuaTele.sendText(msg_chat_id, msg_id,protectionGroup,'md', false, false, false, false, reply_markup)
 end
 if text == "الاعدادات" then    
@@ -10237,7 +10265,7 @@ if not msg.Addictive then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
 end
 if ChannelJoin(msg) == false then
-local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
+local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌??𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
 end
 if msg.can_be_deleted_for_all_users == false then
@@ -10427,9 +10455,6 @@ data = {
 {
 {text = 'Facebook', url = 'https://www.facebook.com/help/deleteaccount'},{text = 'Snapchat', url = 'https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount'}
 },
-{
-{text = '˛ ✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT .', url = 't.me/IIH5I'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'*✮︙رابط الحذف في جميع مواقع التواصل*',"md",false, false, false, false, reply_markup)
@@ -10482,16 +10507,13 @@ data = {
 {text = '•أوامر المدراء•', data = msg.sender.user_id..'/help3'}, {text = '•أوامر المنشئين•', data = msg.sender.user_id..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = msg.sender.user_id..'/help5'}, {text = '•الالعاب والتسليه•', data = msg.sender.user_id..'/help6'}, 
+{text = '•أوامر البنك•', data = msg.sender.user_id..'/help5'}, {text = '•الالعاب والتسليه•', data = msg.sender.user_id..'/help6'}, 
 },
 {
 {text = '•القفل والفتح•', data = msg.sender.user_id..'/NoNextSeting'}, {text = '•التفعيل والتعطيل•', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
 {text = 'اخفاء ✮', data =msg.sender.user_id..'/'.. 'delAmr'}
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -10502,7 +10524,8 @@ return LuaTele.sendText(msg_chat_id,msg_id, [[*
 ✮︙ارسل { م2 } ← اوامر الادمنيه
 ✮︙ارسل { م3 } ← اوامر المدراء
 ✮︙ارسل { م4 } ← اوامر المنشئين
-✮︙ارسل { م5 } ← اوامر مطورين البوت
+✮︙ارسل { م5 } ← اوامر البنك
+✮︙ارسل { م6 } ← اوامر الالعاب
 *]],"md",false, false, false, false, reply_markup)
 elseif text == 'م2' then
 if not msg.Addictive then
@@ -10517,9 +10540,6 @@ type = 'inline',
 data = {
 {
 {text = 'قائمة ألاوامر ✮', data = msg.sender.user_id..'/helpall'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -10538,9 +10558,6 @@ data = {
 {
 {text = 'قائمة ألاوامر ✮', data = msg.sender.user_id..'/helpall'},
 },
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'✮︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
@@ -10557,9 +10574,6 @@ type = 'inline',
 data = {
 {
 {text = 'قائمة ألاوامر ✮', data = msg.sender.user_id..'/helpall'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -10578,17 +10592,11 @@ data = {
 {
 {text = 'قائمة ألاوامر ✮', data = msg.sender.user_id..'/helpall'},
 },
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
-},
 }
 }
 return LuaTele.sendText(msg_chat_id,msg_id,'✮︙عليك استخدام اوامر التحكم بالقوائم',"md",false, false, false, false, reply_markup)
 end
-if text == 'الالعاب' then
-if not msg.Addictive then
-return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص { '..Controller_Num(7)..' }* ',"md",true)  
-end
+if text == 'الالعاب' or text == 'التسليه' or text == 'م6' then
 if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋𝗂𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
 return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
@@ -10596,6 +10604,7 @@ end
 return LuaTele.sendText(msg_chat_id,msg_id,[[*
 ✮︙قائمه الالعاب البوت
 — — — — — — — — —
+✮︙لعبة البنك » بنك
 ✮︙لعبة المختلف » المختلف
 ✮︙لعبة الامثله » امثله
 ✮︙لعبة العكس » العكس
@@ -10608,16 +10617,20 @@ return LuaTele.sendText(msg_chat_id,msg_id,[[*
 ✮︙لعبة كت تويت » كت
 ✮︙لعبة الحروف » حرف
 ✮︙لعبة لو خيروك » خيرني
+✮︙لعبة اعلام دول » اعلام
+✮︙لعبة انكليزي » انكليزي
+✮︙لعبة حجره ورقه » حجره
 — — — — — — — — —
 ✮︙قائمه العاب التسليه
-
-✮︙غنيلي
-✮︙اغنيه
-✮︙متحركه
-✮︙ريمكس
-✮︙ميمز
-✮︙صوره
-✮︙فلم
+✮︙شخصيتي
+✮︙شنو رئيك بهاي
+✮︙مصه . بوسه 
+✮︙رزله . هينه
+— — — — — — — — —
+✮︙غنيلي . مسلسل 
+✮︙اغنيه . متحركه
+✮︙ريمكس . ميمز
+✮︙صوره . فلم
 — — — — — — — — —
 ✮︙مجوهراتي ˓ لعرض عدد الارباح
 ✮︙بيع مجوهراتي ˓ { العدد } ˓ لبيع كل مجوهره مقابل {50} رساله
@@ -12440,7 +12453,7 @@ if tonumber(ratbinc) == 120 or tonumber(ratbinc) == 121 then
 LuaTele.sendText(msg.chat_id,msg.id,"⇜ اشعار ايداع "..neews.."\n\n⇜ المبلغ : 18000 ريال 💵\n⇜ وظيفتك : دكتور 👨‍⚕️\n⇜ نوع العملية : اضافة راتب\n⇜ تطوير الراتب : "..tonumber(ratbinc).."\n⇜ رصيدك الان : "..convert_mony.." ريال 💵\n\nتستطيع الان تطوير راتبك ارسل ( `تطوير راتب` )\n༄","md",true)
 Redis:set("ratbinc"..msg.sender.user_id,120)
 else
-LuaTele.sendText(msg.chat_id,msg.id,"⇜ اشعار ايداع "..neews.."\n\n⇜ المبلغ : 18000 ريال 💵\n⇜ وظيفتك : دكتور 👨‍⚕️\n⇜ نوع العملية : اضافة راتب\n⇜ تطوير الراتب : "..tonumber(ratbinc).."\n⇜ رصيدك الان : "..convert_mony.." ريال 💵\n༄","md",true)
+LuaTele.sendText(msg.chat_id,msg.id,"⇜ اشعار ايداع "..neews.."\n\n⇜ المبلغ : 18000 ريال 💵\n⇜ وظيفتك : دكتور 👨‍⚕️\n⇜ نوع العملية : اضافة راتب\n⇜ تطوير الراتب : "..tonumber(ratbinc).."\n⇜ رصيدك الان : "..convert_mony.." ريال ??\n༄","md",true)
 end
 elseif tonumber(ratbinc) >= 60 and tonumber(ratbtrans) == 3 then
 local ratpep = ballancee + 9000
@@ -12663,7 +12676,7 @@ Redis:set("ratbtrans"..msg.sender.user_id,9)
 nowbalc = tonumber(ballancee) - 200000000
 Redis:set("boob"..msg.sender.user_id , math.floor(nowbalc))
 local convert_mony = string.format("%.0f",nowbalc)
-LuaTele.sendText(msg.chat_id,msg.id,"⇜ اشعار تطوير راتب\n\n⇜ المبلغ : 200000000 ريال 💵\n⇜ اصبحت وظيفتك : امير 🤵\n⇜ رصيدك الان : "..convert_mony.." ريال 💵\n༄","md",true)
+LuaTele.sendText(msg.chat_id,msg.id,"⇜ اشعار تطوير راتب\n\n⇜ المبلغ : 200000000 ريال ??\n⇜ اصبحت وظيفتك : امير 🤵\n⇜ رصيدك الان : "..convert_mony.." ريال 💵\n༄","md",true)
 elseif tonumber(ratbinc) == 210 then
 if tonumber(ballanceed) < 30000000 then
 return LuaTele.sendText(msg.chat_id,msg.id, "⇜ مايمديك تطور راتبك تحتاج مبلغ 30000000 ريال 💵","md",true)
@@ -18202,7 +18215,7 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n*✮︙هاذا الامر يخص 
 end
 if ChannelJoin(msg) == false then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {{{text = '٬ 𝖼𝗅𝗂𝖼𝗄 𝗍𝗈 𝗌𝗎𝖻𝗌𝖼𝗋??𝖻𝖾 † ٫ ', url = 't.me/'..Redis:get(TheSNAYBIR..'SNAYBIR:Channel:Join')}, },}}
-return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
+return LuaTele.sendText(msg.chat_id,msg.id,'*\n 𝗐𝖾𝗅??𝗈𝗆𝖾 𝗉𝗋𝗈 🦎.*',"md",false, false, false, false, reply_markup)
 end
 local list = Redis:smembers(TheSNAYBIR.."SNAYBIR:List:Rd:Sudo")
 text = "\n📝︰قائمة ردود المطور \n— — — — — — — — —\n"
@@ -18489,6 +18502,63 @@ end -- File_Bot_Run
 
 function CallBackLua(data) --- هذا الكالباك بي الابديت
 --var(data) 
+if data and data.luatele and data.luatele == "updateNewInlineQuery" then
+local Text = data.query 
+if Text == '' then
+local input_message_content = {message_text = " ‹ : اهلا بك\n ‹ : لارسال الهمسه اكتب يوزر البوت + الهمسه + يوزر العضو اللي راح تسويله همسه \n ‹ : مثال  @FLOY1BOT هلا @K_S_K6"} 
+local resuult = {{
+type = 'article',
+id = math.random(1,64),
+title = 'اضغط هنا لمعرفه كيفيه ارسال الهمسه',
+input_message_content = input_message_content,
+reply_markup = {
+inline_keyboard ={
+{{text ="ch", url= "https://t.me/allush3"}},
+}
+},
+},
+}
+https.request("https://api.telegram.org/bot"..Token..'/answerInlineQuery?inline_query_id='..data.id..'&switch_pm_text=اضغط لارسال الهمسه&switch_pm_parameter=start&results='..JSON.encode(resuult))
+end
+if Text and Text:match("(.*)@(.*)") then
+local hm = {string.match(Text,"(.*)@(.*)")}
+local user = hm[2]
+local hms = hm[1]
+UserId_Info = LuaTele.searchPublicChat(user)
+local idd = UserId_Info.id
+Redis:del(idd.."hms")
+Redis:set(idd.."hms",hms)
+local us = LuaTele.getUser(idd)
+local name = us.first_name
+local input_message_content = {message_text = "‹ : هذه همسه سريه الي ["..name.."](tg://user?id="..idd..")\n ‹ : هو فقط يكدر يشوفهه 💘 ", parse_mode = 'Markdown'} 
+local resuult = {{
+type = 'article',
+id = math.random(1,64),
+title = 'هذه همسه سريه الي '..name..'',
+input_message_content = input_message_content,
+reply_markup = {
+inline_keyboard ={
+{{text ="اضغط  هنا عمري 💘", callback_data = idd.."hmsaa"..data.sender_user_id}},
+}
+},
+},
+}
+https.request("https://api.telegram.org/bot"..Token..'/answerInlineQuery?inline_query_id='..data.id..'&switch_pm_text=اضغط لارسال الهمسه&switch_pm_parameter=start&results='..JSON.encode(resuult))
+end
+end
+if data and data.luatele and data.luatele == "updateNewInlineCallbackQuery" then
+local Text = LuaTele.base64_decode(data.payload.data)
+if Text and Text:match('(.*)hmsaa(.*)')  then
+local mk = {string.match(Text,"(.*)hmsaa(.*)")}
+local hms = Redis:get(mk[1].."hms")
+if tonumber(mk[1]) == tonumber(data.sender_user_id) or tonumber(mk[2]) == tonumber(data.sender_user_id) then
+https.request("https://api.telegram.org/bot"..Token.."/answerCallbackQuery?callback_query_id="..data.id.."&text="..URL.escape(hms).."&show_alert=true")
+end
+if tonumber(mk[1]) ~= tonumber(data.sender_user_id) or tonumber(mk[2]) ~= tonumber(data.sender_user_id) then
+https.request("https://api.telegram.org/bot"..Token.."/answerCallbackQuery?callback_query_id="..data.id.."&text="..URL.escape("الهمسه ليست لك").."&show_alert=true")
+end
+end
+end
 if data and data.luatele and data.luatele == "updateSupergroup" then
 local Get_Chat = LuaTele.getChat('-100'..data.supergroup.id)
 if data.supergroup.status.luatele == "chatMemberStatusBanned" then
@@ -19916,16 +19986,13 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
 },
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -19936,15 +20003,15 @@ local TextHelp = [[*
 ✮︙تستطيع قفل حمايه كما يلي ...
 ✮︙˓ { بالتقيد ، بالطرد ، بالكتم }
 — — — — — — — — —
+✮︙القناه
+✮︙الفارسيه
+✮︙الفشار
 ✮︙الروابط
 ✮︙المعرف
 ✮︙التاك
 ✮︙الشارحه
 ✮︙التعديل
 ✮︙التثبيت
-✮︙المتحركه
-✮︙الملفات
-✮︙الصور
 — — — — — — — — —
 ✮︙الماركداون
 ✮︙البوتات
@@ -19961,6 +20028,9 @@ local TextHelp = [[*
 ✮︙الصوت
 ✮︙الجهات
 ✮︙الاشعارات
+✮ ︙المتحركه
+✮ ︙الملفات
+✮ ︙الصور
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -19977,16 +20047,13 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
 },
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -20039,16 +20106,13 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
 },
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -20073,6 +20137,7 @@ local TextHelp = [[*
 ✮︙ردود المطور ، ردود المدير
 ✮︙اطردني ، الالعاب ، الرفع
 ✮︙الحظر ، الرابط ، امسح
+✮︙التسليه . الثنائي .تاك تلقائي
 ✮︙جمالي ، صورتي ، كول
 — — — — — — — — —
 ✮︙تعين ، مسح ˓{ الايدي }
@@ -20096,16 +20161,13 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
-},
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -20139,7 +20201,7 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
@@ -20147,40 +20209,45 @@ data = {
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
 },
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
-},
 }
 }
 local TextHelp = [[*
-✮︙اوامر المطور الاساسي  
-— — — — — — — — —
-✮︙حظر عام ، الغاء العام
-✮︙اضف ، حذف ˓ { مطور } 
-✮︙قائمه العام ، مسح قائمه العام
-✮︙المطورين ، مسح المطورين
-— — — — — — — — —
-✮︙اضف ، حذف ˓ { رد للكل }
-✮︙وضع ، حذف ˓ { كليشه المطور } 
-✮︙مسح ردود المطور ، ردود المطور 
-✮︙تحديث ،  تحديث السورس 
-✮︙تعين عدد الاعضاء ˓ { العدد }
-— — — — — — — — —
-✮︙تفعيل ، تعطيل ˓ { الاوامر التاليه ↓}
-✮︙البوت الخدمي ، المغادرة ، الاذاعه
-✮︙ملف ˓ { اسم الملف }
-— — — — — — — — —
-✮︙مسح جميع الملفات 
-✮︙المتجر ، الملفات
-— — — — — — — — —
-✮︙اوامر المطور في البوت
-— — — — — — — — —
-✮︙تفعيل ، تعطيل ، الاحصائيات
-✮︙رفع، تنزيل ˓ { منشئ اساسي }
-✮︙مسح الاساسين ، المنشئين الاساسين 
-✮︙غادر ، غادر ˓ { والايدي }
-✮︙اذاعه ، اذاعه بالتوجيه ، اذاعه بالتثبيت
-✮︙اذاعه خاص ، اذاعه خاص بالتوجيه 
+☆ اوامر البنك
+ــــــــــــــــــــــــــــــــــــــــــــــ
+⇜ انشاء حساب بنكي  ↢ تسوي حساب وتقدر تحول فلوس مع مزايا ثانيه
+⇜ مسح حساب بنكي  ↢ تلغي حسابك البنكي
+⇜ تحويل ↢ تطلب رقم حساب الشخص وتحول له فلوس
+⇜ حسابي  ↢ يطلع لك رقم حسابك عشان تعطيه للشخص اللي بيحول لك
+⇜ فلوسي ↢ يعلمك كم فلوسك
+⇜ راتب ↢ يعطيك راتب كل ١٠ دقائق
+⇜ بخشيش ↢ يعطيك بخشيش كل ١٠ دقايق
+⇜ زرف ↢ تزرف فلوس اشخاص كل ١٠ دقايق
+⇜ استثمار ↢ تستثمر بالمبلغ اللي تبيه مع نسبة ربح مضمونه من ١٪؜ الى ١٥٪؜
+⇜ حظ ↢ تلعبها بأي مبلغ ياتدبله ياتخسره انت وحظك
+⇜ مضاربه ↢ تضارب بأي مبلغ تبيه والنسبة من ٩٠٪؜ الى -٩٠٪؜ انت وحظك
+⇜ هجوم ↢ تهجم عالخصم مع زيادة نسبة كل هجوم
+⇜ كنز ↢ يعطيك كنز بسعر مختلف انتا وحظك
+⇜ مراهنه ↢ تحط مبلغ وتراهن عليه
+⇜ توب الفلوس ↢ يطلع توب اكثر ناس معهم فلوس بكل القروبات
+⇜ توب الحراميه ↢ يطلع لك اكثر ناس زرفوا
+⇜ زواج  ↢ تكتبه بالرد على رسالة شخص مع المهر ويزوجك
+⇜ زواجي  ↢ يطلع وثيقة زواجك اذا متزوج
+⇜ قرض ↢ تاخذ قرض من البنك
+⇜ تسديد القرض ↢ بتسدد القرض اذا عليك 
+⇜ تسديد قرضه ↢تسدد قرض الشخص
+⇜ طلاق ↢ يطلقك اذا متزوج
+⇜ خلع  ↢ يخلع زوجك ويرجع له المهر
+⇜ زواجات ↢ يطلع اغلى ٣٠ زواجات
+⇜ ترتيبي ↢ يطلع ترتيبك باللعبة
+⇜ المعرض ↢ يمديك تشتري سيارات وعقارات وكثير اشياء
+⇜ ممتلكاتي ↢ يطلع لك مشترياتك من المعرض
+⇜ عجله الحظ ↢ انتا وحظك يطلعلك جوائز كثيرة
+⇜ تبرع ↢ تتبرع الى افقر اللاعبين
+⇜ انشاء شركه ↢ تنشئ شركتك وتضيف اصدقائك
+⇜ اضافه ↢ تضيف موضيفين لشركتك
+⇜ طرد موظف ↢  طرد موضف من شركتك
+ــــــــــــــــــــــــــــــــــــــــــــــ
+༄
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
@@ -20197,7 +20264,7 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
@@ -20205,14 +20272,12 @@ data = {
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
 },
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
-},
 }
 }
 local TextHelp = [[*
 ✮︙قائمه الالعاب البوت
 — — — — — — — — —
+✮︙لعبة البنك » بنك
 ✮︙لعبة المختلف » المختلف
 ✮︙لعبة الامثله » امثله
 ✮︙لعبة العكس » العكس
@@ -20225,16 +20290,20 @@ local TextHelp = [[*
 ✮︙لعبة كت تويت » كت
 ✮︙لعبة الحروف » حرف
 ✮︙لعبة لو خيروك » خيرني
+✮︙لعبة اعلام دول » اعلام
+✮︙لعبة انكليزي » انكليزي
+✮︙لعبة حجره ورقه » حجره
 — — — — — — — — —
 ✮︙قائمه العاب التسليه
-
-✮︙غنيلي
-✮︙اغنيه
-✮︙متحركه
-✮︙ريمكس
-✮︙ميمز
-✮︙صوره
-✮︙فلم
+✮︙شخصيتي
+✮︙شنو رئيك بهاي
+✮︙مصه . بوسه 
+✮︙رزله . هينه
+— — — — — — — — —
+✮︙غنيلي . مسلسل 
+✮︙اغنيه . متحركه
+✮︙ريمكس . ميمز
+✮︙صوره . فلم
 — — — — — — — — —
 ✮︙مجوهراتي ˓ لعرض عدد الارباح
 ✮︙بيع مجوهراتي ˓ { العدد } ˓ لبيع كل مجوهره مقابل {50} رساله
@@ -20254,17 +20323,13 @@ data = {
 {text = '•أوامر المدراء•', data = IdUser..'/help3'}, {text = '•أوامر المنشئين•', data = IdUser..'/help4'}, 
 },
 {
-{text = '•أوامر المطور•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
+{text = '•أوامر البنك•', data = IdUser..'/help5'}, {text = '•الالعاب والتسليه•', data = IdUser..'/help6'}, 
 },
 {
 {text = 'رجوع ✮ ', data = IdUser..'/helpall'},
 },
 {
 {text = 'اخفاء ✮', data =IdUser..'/'.. 'delAmr'}
-},
-
-{
-{text = '✮ SٌِAَِUَِٰٓRِْSَِE َِٓRِٔOَِUَِٰLَِٕ̑̈EَٕT', url = 't.me/IIH5I'}, 
 },
 }
 }
@@ -20275,7 +20340,8 @@ local TextHelp = [[*
 ✮︙ارسل { م2 } ← اوامر الادمنيه
 ✮︙ارسل { م3 } ← اوامر المدراء
 ✮︙ارسل { م4 } ← اوامر المنشئين
-✮︙ارسل { م5 } ← اوامر مطورين البوت
+✮︙ارسل { م5 } ← اوامر البنك
+✮︙ارسل { م6 } ← اوامر الالعاب
 *]]
 LuaTele.editMessageText(ChatId,Msg_id,TextHelp, 'md', true, false, reply_markup)
 end
